@@ -33,7 +33,7 @@ module.exports = function globalJsdom (html, options) {
     global[key] = window[key]
   })
 
-  global.jsdom = jsdom
+  global.jsdom = document
   global.document = window.document
   global.window = window
   window.console = global.console
